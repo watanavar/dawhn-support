@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index, follow">
+<title>ドーン サポート / プライバシーポリシー</title>
+<style>
+  /* ── 完全自己完結：外部リソース（フォント/解析/トラッカー）を一切読み込まない ── */
+  :root{
+    --paper:#fbf8f3;      /* 夜明け前の暖かい紙 */
+    --card:#f5efe5;
+    --line:#e6ddcd;       /* ヘアライン */
+    --ink:#221d2c;        /* 藍墨の本文 */
+    --ink-soft:#5b5466;   /* 副次テキスト */
+    --gold:#c39a4f;       /* 最初の光（署名・地平線だけに使う） */
+    --link:#3b4a78;       /* 夜明けの藍 */
+    --link-hover:#2a3559;
+    --maxw:680px;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,system-ui,-apple-system,sans-serif;
+    line-height:1.85;
+    font-size:16px;
+    letter-spacing:.01em;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 22px }
+
+  /* ── ヘッダー：署名要素（樹形図＋地平線） ── */
+  header{ padding:64px 0 40px; text-align:center }
+  .mark{ display:block; margin:0 auto 22px; width:88px; height:auto; color:var(--gold) }
+  .wordmark{
+    margin:0;
+    font-size:clamp(2.1rem,7vw,2.9rem);
+    font-weight:600;
+    letter-spacing:.04em;
+    line-height:1.1;
+  }
+  .romaji{
+    margin:.5em 0 0;
+    font-size:.8rem;
+    letter-spacing:.42em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    padding-left:.42em; /* トラッキングの右寄りを中央へ補正 */
+  }
+  .tagline{
+    margin:1.1em auto 0;
+    max-width:30em;
+    color:var(--ink-soft);
+    font-size:1.02rem;
+  }
+  .rule{ height:1px; background:var(--line); border:0; margin:0 }
+
+  /* ── セクション共通 ── */
+  main{ padding:8px 0 0 }
+  .block{ padding:44px 0; border-bottom:1px solid var(--line) }
+  .eyebrow{
+    font-size:.74rem; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--gold); margin:0 0 14px; font-weight:600;
+  }
+  h2{ font-size:1.32rem; font-weight:600; margin:0 0 18px; letter-spacing:.01em }
+  p{ margin:0 0 1em }
+  a{ color:var(--link); text-decoration:underline; text-underline-offset:2px }
+  a:hover{ color:var(--link-hover) }
+  :focus-visible{ outline:2px solid var(--link); outline-offset:3px; border-radius:3px }
+
+  /* ── お問い合わせカード ── */
+  .contact-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:24px 24px 20px;
+  }
+  .mail{
+    display:inline-block; margin:.2em 0 .6em;
+    font-size:1.06rem; font-weight:600;
+    word-break:break-all;
+  }
+  .note{ font-size:.9rem; color:var(--ink-soft); margin:0 }
+
+  /* ── プライバシーポリシー本文 ── */
+  .policy{ scroll-margin-top:20px }
+  .updated{ color:var(--ink-soft); font-size:.9rem; margin:-6px 0 28px }
+  .policy h3{
+    font-size:1.04rem; font-weight:600;
+    margin:30px 0 8px; letter-spacing:.01em;
+  }
+  .policy h3 .num{ color:var(--gold); margin-right:.5em; font-variant-numeric:tabular-nums }
+  .policy ul{ margin:0 0 1em; padding-left:1.25em }
+  .policy li{ margin:0 0 .5em }
+  .lead{ font-size:1.02rem }
+
+  /* ── フッター ── */
+  footer{ padding:40px 0 64px; text-align:center; color:var(--ink-soft); font-size:.88rem }
+  footer .seller{ color:var(--ink); font-weight:600 }
+  footer p{ margin:.35em 0 }
+  .ph{ /* 公開時に差し込むプレースホルダの目印 */
+    background:rgba(195,154,79,.16);
+    border-bottom:1px dashed var(--gold);
+    padding:0 .2em; border-radius:2px; font-style:normal;
+  }
+
+  @media (prefers-reduced-motion:no-preference){
+    header{ animation:rise .7s ease both }
+    @keyframes rise{ from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:none} }
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#19171f; --card:#211d29; --line:#352f3f;
+      --ink:#ece7f1; --ink-soft:#a59db3; --gold:#d4b066;
+      --link:#9fb0e6; --link-hover:#c2cdf2;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <!-- 署名：地平線から伸びる樹形図（夜明け／地理×時間の枝分かれ） -->
+    <svg class="mark" viewBox="0 0 88 88" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="44" cy="20" r="9" stroke="currentColor" stroke-width="1.4" opacity=".6"/>
+      <path d="M44 74 V44" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M44 56 L30 42 M44 50 L58 38 M30 42 L22 34 M30 42 L34 30 M58 38 L66 30 M58 38 L54 28"
+            stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      <circle cx="22" cy="34" r="2.1" fill="currentColor"/>
+      <circle cx="34" cy="30" r="2.1" fill="currentColor"/>
+      <circle cx="54" cy="28" r="2.1" fill="currentColor"/>
+      <circle cx="66" cy="30" r="2.1" fill="currentColor"/>
+      <path d="M8 74 H80" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".75"/>
+    </svg>
+    <h1 class="wordmark">ドーン</h1>
+    <p class="romaji">dWANhn</p>
+    <p class="tagline">あなたの写真を、撮った場所と日付で「樹形図」として静かに見わたすための、iPhone アプリです。</p>
+  </div>
+</header>
+<hr class="rule">
+
+<main>
+<div class="wrap">
+
+  <!-- 2. お問い合わせ -->
+  <section class="block" id="support" aria-labelledby="support-h">
+    <p class="eyebrow">Support</p>
+    <h2 id="support-h">お問い合わせ</h2>
+    <div class="contact-card">
+      <p>本アプリは個人で開発しています。ご要望や不具合のご報告は、下記までお気軽にお寄せください。</p>
+      <a class="mail" href="mailto:〔お問い合わせ先（公開時に記載）〕"><span class="ph">〔お問い合わせ先（メールアドレス）：公開時に記載〕</span></a>
+      <p class="note">※ 運営者は、あなたのデータの内容を見たり、個別に復元したりすることはできません（データはあなたの iPhone の中にあるためです）。</p>
+    </div>
+  </section>
+
+  <!-- 3. プライバシーポリシー（#privacy で直接着地） -->
+  <section class="block policy" id="privacy" aria-labelledby="privacy-h">
+    <p class="eyebrow">Privacy</p>
+    <h2 id="privacy-h">ドーン プライバシーポリシー</h2>
+    <p class="updated">最終更新日：<span class="ph">〔日付：公開時に記載〕</span></p>
+
+    <p class="lead">ドーン（以下「本アプリ」）は、あなたの思い出を、あなたの手元で大切に扱うことを最優先に設計しています。本ポリシーは、本アプリが扱う情報とその扱い方を説明します。本アプリの現在の機能（iPhone 向け）について記載しています。</p>
+
+    <h3><span class="num">1.</span>基本姿勢</h3>
+    <p>本アプリの処理は、原則としてあなたの端末（iPhone）の中で完結します。写真は、あなたの端末の中で整理・表示され、運営者がのぞき見ることはありません。</p>
+
+    <h3><span class="num">2.</span>端末の中で完結すること</h3>
+    <p>本アプリは、あなたの写真ライブラリを読み取り、撮影された場所と日付をもとに「樹形図」として表示します。写真・動画そのもの（画像・映像データ）は、あなたの端末の中だけで扱われます。これらの整理・表示の処理は、あなたの端末内で行われます。</p>
+
+    <h3><span class="num">3.</span>外部に送られる情報（すべて Apple のサービス）</h3>
+    <p>本アプリが端末の外に情報を送るのは、次の 2 つの目的に限られます。送り先はいずれも Apple のサービスで、Apple 以外の第三者には一切送信しません。</p>
+    <ul>
+      <li><strong>地名の表示（Apple の地名サービス）</strong>：写真の撮影場所を「市」「区」などの地名で表示するため、撮影地の座標を Apple の地名サービスにのみ送信します。自社のサーバーや第三者には送信しません。</li>
+      <li><strong>地図の表示（Apple マップ）</strong>：地図を表示するため、Apple のサーバーから地図データを取得します。この通信に伴い、IP アドレスなどの一般的な通信情報が Apple に渡ります。地図は Apple 標準の仕組み（MapKit）を用いており、Apple 以外の第三者には地図に関する情報を送信しません。</li>
+    </ul>
+
+    <h3><span class="num">4.</span>写真そのものはクラウドに送りません</h3>
+    <p>本アプリは、あなたの写真・動画そのもの（画像・映像データ）を、クラウドや運営者のサーバーに送信・保存することは一切ありません。写真・動画は、あなたの端末の写真ライブラリにあるままです。</p>
+
+    <h3><span class="num">5.</span>運営者にできないこと</h3>
+    <p>本アプリの設計上、運営者は次のことができません。</p>
+    <ul>
+      <li>あなたの写真の内容を見ること</li>
+      <li>それらを取り出すこと</li>
+      <li>あなたに代わってデータを復元すること</li>
+    </ul>
+    <p>本アプリのデータはあなたの端末の中だけにあるため、お問い合わせをいただいても、運営者が個別のデータを確認したり復元したりすることはできません。</p>
+
+    <h3><span class="num">6.</span>データの削除</h3>
+    <p>本アプリは、独自のログインやアカウントを持ちません（Apple ID を通じて暗黙的に動作します）。また、データを当社や外部のクラウドに保存することもありません。</p>
+    <ul>
+      <li><strong>樹形図からの削除</strong>：アプリ内で削除すると、一定期間「ゴミ箱」に保管され、その後に確定します。元に戻すこともできます。これは本アプリの表示からの削除であり、あなたの写真ライブラリにある写真・動画そのものには影響しません。</li>
+      <li><strong>「アカウントの削除」について</strong>：本アプリには独自のアカウントがなく、当社や外部のクラウドにデータを保存することもありません。本アプリが扱うデータ（樹形図の整理結果や設定）は、あなたの端末の中だけにあります。本アプリを削除（アンインストール）すると、これらの端末内データは取り除かれます。あなたの写真ライブラリの写真・動画そのものには一切触れません。</li>
+    </ul>
+
+    <h3><span class="num">7.</span>ログと安全性</h3>
+    <ul>
+      <li>位置の座標やアクセス用の鍵などの機微な値を、ログに記録することはありません。</li>
+      <li>外部との通信（地名・地図）は、いずれも暗号化（TLS）された Apple の標準的な仕組みで行われます。</li>
+    </ul>
+
+    <h3><span class="num">8.</span>第三者への提供・広告・トラッキング</h3>
+    <p>本アプリは、あなたの情報を第三者に販売・提供しません。本アプリの通信先は Apple のサービス（地名・地図）に限られ、Apple 以外の第三者にあなたのデータを送信することはありません。広告は表示せず、広告目的の識別子による追跡（トラッキング）も行いません。</p>
+
+    <h3><span class="num">9.</span>お問い合わせ</h3>
+    <p>本ポリシーや本アプリに関するお問い合わせ・ご要望は、次の窓口までご連絡ください。<br>
+    <span class="ph">〔お問い合わせ先（メールアドレス）：公開時に記載〕</span><br>
+    ご連絡をいただいた場合でも、運営者はあなたのデータの内容を確認したり、個別に復元したりすることはできません（データはあなたの端末の中にあるためです）。</p>
+
+    <h3><span class="num">10.</span>本ポリシーの改定</h3>
+    <p>本ポリシーは、機能の変更などに応じて改定することがあります。重要な変更がある場合は、本アプリまたは本ページでお知らせします。改定後の最終更新日は本ページ上部に表示します。</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="seller"><span class="ph">〔事業者名（販売者名）：公開時に記載〕</span></p>
+    <p>最終更新日：<span class="ph">〔日付：公開時に記載〕</span></p>
+    <p><a href="〔App Store の URL：公開時に記載〕"><span class="ph">App Store でドーンを見る</span></a></p>
+  </div>
+</footer>
+
+</body>
+</html>
